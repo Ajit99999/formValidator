@@ -28,7 +28,12 @@ function formSubmitHandler(e) {
     formElem.reset();
     isValid = false;
     passwordValid = false;
+    alert("You have Successfully Signed Up!!!")
   } else {
+    if(!passwordValid)
+    {
+      alert("Please enter the same value for both password & confirm password")
+    }
     return;
   }
 }
